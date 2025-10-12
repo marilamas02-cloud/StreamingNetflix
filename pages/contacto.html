@@ -70,7 +70,76 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">
+              Nombre <span class="text-danger">*</span>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">
+              Correo Electrónico <span class="text-danger">*</span>
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="asunto" class="form-label">
+              Asunto <span class="text-danger">*</span>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="asunto"
+              name="asunto"
+              placeholder="Asunto del mensaje"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">
+              Mensaje <span class="text-danger">*</span>
+            </label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">
+              Enviar mensaje
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
     <footer class="netflix-footer">
       <div class="footer-container row">
         <p class="footer-top col-12 px-5">¿Preguntas? Llama al 0800 345 1593</p>
