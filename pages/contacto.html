@@ -52,16 +52,16 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/login.html">Ingresar</a>
+                <a class="nav-link" href="./login.html">Ingresar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/registro.html"
+                <a class="nav-link" href="./registro.html"
                   >Registrarse</a
                 >
               </li>
@@ -73,70 +73,73 @@
     <main>
       <div class="container py-5">
         <h2 class="text-center mb-4">Contáctanos</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">
+                  Nombre <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
 
-        <form>
-          <div class="mb-3">
-            <label for="nombre" class="form-label">
-              Nombre <span class="text-danger">*</span>
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="nombre"
-              name="nombre"
-              placeholder="Tu nombre"
-              required
-            />
-          </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Correo Electrónico <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
 
-          <div class="mb-3">
-            <label for="email" class="form-label">
-              Correo Electrónico <span class="text-danger">*</span>
-            </label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              name="email"
-              placeholder="tu@email.com"
-              required
-            />
-          </div>
+              <div class="mb-3">
+                <label for="asunto" class="form-label">
+                  Asunto <span class="text-danger">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="asunto"
+                  name="asunto"
+                  placeholder="Asunto del mensaje"
+                  required
+                />
+              </div>
 
-          <div class="mb-3">
-            <label for="asunto" class="form-label">
-              Asunto <span class="text-danger">*</span>
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="asunto"
-              name="asunto"
-              placeholder="Asunto del mensaje"
-              required
-            />
-          </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">
+                  Mensaje <span class="text-danger">*</span>
+                </label>
+                <textarea
+                  class="form-control"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  placeholder="Escribe tu mensaje aquí..."
+                  required
+                ></textarea>
+              </div>
 
-          <div class="mb-3">
-            <label for="mensaje" class="form-label">
-              Mensaje <span class="text-danger">*</span>
-            </label>
-            <textarea
-              class="form-control"
-              id="mensaje"
-              name="mensaje"
-              rows="5"
-              placeholder="Escribe tu mensaje aquí..."
-              required
-            ></textarea>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Enviar mensaje
+                </button>
+              </div>
+            </form>
           </div>
-
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-lg">
-              Enviar mensaje
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </main>
 
