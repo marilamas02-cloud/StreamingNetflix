@@ -69,51 +69,84 @@
       </nav>
     </header>
     <main>
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4">
-            <form class="p-4 shadow rounded-4 bg-body-tertiary">
-              <h2 class="text-center mb-4">Iniciar sesión</h2>
+      <section id="login" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <form class="p-4 shadow rounded-4 bg-body-tertiary">
+          <h2 class="text-center mb-4">Iniciar sesión</h2>
 
-              <div class="mb-3">
-                <label for="nombre" class="form-label">
-                  Nombre <span class="text-danger">*</span>
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                  required
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="email" class="form-label">
-                  Correo Electrónico <span class="text-danger">*</span>
-                </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="tu@email.com"
-                  required
-                />
-              </div>
-              <div class="d-grid">
-                <a
-                  href="../pages/error404.html"
-                  class="btn btn-primary btn-lg text-white text-decoration-none"
-                >
-                  Iniciar Sesión
-                </a>
-              </div>
-            </form>
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label for="nombre" class="form-label">
+              Nombre <span class="text-danger">*</span>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+              minlength="3"
+              maxlength="10"
+              pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{3,10}"
+              title="Solo letras (mínimo 3 y máximo 10 caracteres, sin números ni signos)"
+            />
           </div>
-        </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">
+              Correo Electrónico <span class="text-danger">*</span>
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+              minlength="7"
+              maxlength="15"
+              pattern="[A-Za-z0-9@._-]{7,15}"
+              title="Debe tener entre 7 y 15 caracteres. Se permiten letras, números y @"
+            />
+          </div>
+
+          <!-- Contraseña -->
+          <div class="mb-3">
+            <label for="password" class="form-label">
+              Contraseña <span class="text-danger">*</span>
+            </label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Tu contraseña"
+              required
+              minlength="8"
+              maxlength="10"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,10}$"
+              title="Debe tener entre 8 y 10 caracteres, incluir letras, números y solo un signo"
+            />
+          </div>
+
+          <div class="d-grid">
+            <a
+              href="../pages/error404.html"
+              class="btn btn-primary btn-lg text-white text-decoration-none"
+            >
+              Iniciar Sesión
+            </a>
+          </div>
+        </form>
       </div>
+    </div>
+  </div>
+</section>
+
     </main>
     <footer class="netflix-footer">
       <div class="footer-container row">
