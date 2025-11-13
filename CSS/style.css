@@ -7,3 +7,38 @@
 .logo {
     width: 100px;
 }
+
+.cards .card {
+  width: 18rem;
+  height: 32rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.img-index {
+  height: 250px; 
+  object-fit: cover; 
+  width: 100%;
+}
+
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+
+.card .buttonCard {
+  align-self: center;
+  width: 100%;
+  margin-top: auto; 
+
+}
